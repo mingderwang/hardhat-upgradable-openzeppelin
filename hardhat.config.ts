@@ -6,10 +6,12 @@ import "@nomiclabs/hardhat-waffle";
 import "@typechain/hardhat";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
+import "@nomiclabs/hardhat-ethers";
+import "@openzeppelin/hardhat-upgrades";
 
 dotenv.config();
 
-const defaultNetwork = "ropsten";
+const defaultNetwork = "hardhat";
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
@@ -25,7 +27,17 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 
 const config: HardhatUserConfig = {
   defaultNetwork,
-  solidity: "0.8.4",
+  solidity: {
+        compilers: [
+          {
+            version: "0.7.3",
+          },
+          {
+            version: "0.8.7",
+            settings: {},
+          },
+        ],   
+  },
   networks: {
     ropsten: {
       url: process.env.ROPSTEN_URL || "",
