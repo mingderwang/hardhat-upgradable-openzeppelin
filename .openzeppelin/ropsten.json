@@ -57,6 +57,26 @@
       "address": "0x6e30E6dB05F99F6108A300B1bea700b2ef43a602",
       "txHash": "0xa65c80312ad7cc1682b32a06a71b3618a81902cca5d34ae70a6848ad8385241d",
       "kind": "transparent"
+    },
+    {
+      "address": "0x7E32dCAB6285f0afB483f0525308A8f8Ff006e18",
+      "txHash": "0x318e6942f8a0e3b1630105ccc3b0e402916a43481804881ca343da8f3f6b4bf7",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x074DB1360727588E9D3cFd1fef79a9573037B68e",
+      "txHash": "0x37b2d970333654b16027c1988fd6ec987c9e55477737e3a6e2b5bd9e324a16b4",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x6A0F6799E09dD48dB183a8fE13927f1F63036226",
+      "txHash": "0x9bcee877a418c2c07d95f692b119c47bbef98506ac98626acf2fabcf6434490f",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x57e156d5Ac74C9e518dc42994dFfCEB54eB5bD5B",
+      "txHash": "0x6e323c307ecd69aa30cd96a22de106e007ed8dbbaebd835867bd02c6ce77bec7",
+      "kind": "transparent"
     }
   ],
   "impls": {
@@ -70,6 +90,68 @@
             "label": "value",
             "type": "t_uint256",
             "src": "contracts/Box.sol:6"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    },
+    "6013909d12cd7fe206d60cd0e07e54925ffe8270ec29851ec939604d4022d0ee": {
+      "address": "0xa1dC7629E88B4e4D4E35Ee3Fb0E4e349FEFd0A9c",
+      "txHash": "0x108813772656ae6d5dbfb000e806b8d2097198ed299b471a864904bb9772bfea",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "AdminBox",
+            "label": "_value",
+            "type": "t_uint256",
+            "src": "contracts/AdminBox.sol:8"
+          },
+          {
+            "contract": "AdminBox",
+            "label": "_admin",
+            "type": "t_address",
+            "src": "contracts/AdminBox.sol:9"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "01c3ba37320016517cdb11c3854419e58447d3987ca7ee58cc7d8498e0984ab2": {
+      "address": "0x682f2fC6AdeE60d591cfFdcA04a2f5bc33E3f3E5",
+      "txHash": "0xe8b601bfc03e1d4dd39589cbddb4c3ef701db08eaa8770848ff25070395007f2",
+      "layout": {
+        "storage": [
+          {
+            "contract": "BoxV2",
+            "label": "value",
+            "type": "t_uint256",
+            "src": "contracts/BoxV2.sol:7"
           }
         ],
         "types": {

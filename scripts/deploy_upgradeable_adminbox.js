@@ -6,11 +6,11 @@ async function main() {
   console.log("Deploying AdminBox...");
   const adminBox = await upgrades.deployProxy(
     AdminBox,
-    ["0xACa94ef8bD5ffEE41947b4585a84BdA5a3d3DA6E"],
+    ["0x609683612D80A091C69747a76ec6efE284a7cf46"],
     { initializer: "initialize" }
   );
   await adminBox.deployed();
-  console.log("AdminBox deployed to:", adminBox.address);
+  console.log("AdminBox deployed to: ", adminBox.address);
 }
 
 main();
