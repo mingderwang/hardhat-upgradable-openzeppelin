@@ -44,6 +44,13 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    polygon_testnet: {
+      url: process.env.POLYGON_TEST_URL || "",
+      chainId: 80001,
+      gasPrice: 20000000000,
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     bsctestnet: {
       url: process.env.BSC_TEST_URL || "",
       chainId: 97,

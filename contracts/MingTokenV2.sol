@@ -11,7 +11,7 @@ import "./@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "./@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 import "./@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol";
 
-contract MingToken is Initializable, ERC721Upgradeable, ERC721EnumerableUpgradeable, ERC721URIStorageUpgradeable, PausableUpgradeable, AccessControlUpgradeable, ERC721BurnableUpgradeable, UUPSUpgradeable {
+contract MingTokenV2 is Initializable, ERC721Upgradeable, ERC721EnumerableUpgradeable, ERC721URIStorageUpgradeable, PausableUpgradeable, AccessControlUpgradeable, ERC721BurnableUpgradeable, UUPSUpgradeable {
     using CountersUpgradeable for CountersUpgradeable.Counter;
 
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER_ROLE");
